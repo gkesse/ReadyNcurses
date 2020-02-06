@@ -1,10 +1,9 @@
 //===============================================
-#include <iostream>
-//===============================================
-using namespace std;
+#include "GWindow.h"
 //===============================================
 int main(int argc, char** argv) {
-    cout << "ooooooooooooooooooooooo\n";
+    GWindow* lWindow = GWindow::Create(G_WINDOW_MOUSE);
+    lWindow->show();
     return 0;
 }
 //===============================================

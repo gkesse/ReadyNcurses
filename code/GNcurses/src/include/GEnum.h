@@ -7,7 +7,7 @@ typedef enum _eGEnum {
 	G_WINDOW_DEFAULT,
 	G_WINDOW_MOUSE,
 	G_LAST
-};
+} eGEnum;
 //===============================================
 #endif
 //===============================================

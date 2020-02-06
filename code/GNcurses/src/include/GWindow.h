@@ -9,6 +9,9 @@ public:
     GWindow();
     virtual ~GWindow();
     static GWindow* Create(int key);
+
+public:
+    virtual void show();
 };
 //===============================================
 #endif
