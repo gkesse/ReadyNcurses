@@ -1,5 +1,6 @@
 //===============================================
 #include "GNcurses.h"
+#include "GDebug.h"
 //===============================================
 GNcurses* GNcurses::m_instance = 0;
 //===============================================
@@ -21,7 +22,7 @@ GNcurses* GNcurses::Instance() {
 void GNcurses::move(int row, int col) {
     int lRow = (row*(LINES - 1))/100;
     int lCol = (col*(COLS - 1))/100;
-    cout << lRow << " ; " << lCol << "\n";
+    GDebug::Instance()->write("row: %d col: %d", lRow, lCol);
     //move(lRow, lCol);
 }
 //===============================================

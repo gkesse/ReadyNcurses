@@ -8,11 +8,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdarg.h>
+#include <time.h>
+//===============================================
 #include <ncurses.h>
-//===============================================
-#include <iostream>
-//===============================================
-using namespace std;
 //===============================================
 #include "GEnum.h"
 #include "GDefine.h"

@@ -12,7 +12,8 @@ public:
     ~GDebug();
     static GDebug* Instance();
     void getCurrentDate();
-    void write(const char* data);
+    void write(const char* format, ...);
+    void clear();
 
 public:
     static GDebug* m_instance;
