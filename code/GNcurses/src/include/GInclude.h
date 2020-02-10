@@ -12,6 +12,8 @@
 #include <time.h>
 //===============================================
 #include <ncurses.h>
+#include <menu.h>
+#include <panel.h>
 //===============================================
 #include "GEnum.h"
 #include "GDefine.h"

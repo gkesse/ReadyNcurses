@@ -8,7 +8,7 @@ GINCS = \
     -I$(GSRC)/include \
 
 GLIBS = \
-    -lncurses -lmenu -lform
+    -lncurses -lmenu -lform -lpanel
 
 GOBJS = \
     $(patsubst $(GSRC)/%.cpp, $(GBUILD)/%.o, $(wildcard $(GSRC)/*.cpp)) \

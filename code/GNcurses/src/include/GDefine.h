@@ -2,6 +2,9 @@
 #ifndef _GDefine_
 #define _GDefine_
 //===============================================
+#define KEY_ESCAPE 27
+#define KEY_RESIZE_EVENT 410
+//===============================================
 #define GBUFFER_STRING 256
 #define GBUFFER_LINE 512
 #define GBUFFER_DATA 1024

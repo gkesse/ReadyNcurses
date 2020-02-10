@@ -11,6 +11,12 @@ public:
     
 public:
     void show();
+    
+public:
+    void paintEvent();
+    
+private:
+    WINDOW* m_menu;
 };
 //===============================================
 #endif

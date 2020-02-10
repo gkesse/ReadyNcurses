@@ -1,1 +1,1 @@
-08/02/2020 05:37:31 | message de debogage
+08/02/2020 08:31:12 | G_WINDOW_DEFAULT

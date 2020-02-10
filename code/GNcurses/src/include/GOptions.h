@@ -1,20 +1,24 @@
 //===============================================
-#ifndef _GNcurses_
-#define _GNcurses_
+#ifndef _GOptions_
+#define _GOptions_
 //===============================================
 #include "GInclude.h"
 //===============================================
-class GNcurses {
+class GOptions {
 private:
-    GNcurses();
+    GOptions(); 
 
 public:
-    ~GNcurses();
-    static GNcurses* Instance();
-    void move(int row, int col);
+    ~GOptions();
+    static GOptions* Instance();
+    void getArgs(int argc, char** argv);
+    int getArgc();
+    char** getArgv();
 
 public:
-    static GNcurses* m_instance;
+    static GOptions* m_instance;
+    int m_argc;
+    char** m_argv;
 };
 //===============================================
 #endif

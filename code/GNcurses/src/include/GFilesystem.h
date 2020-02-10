@@ -1,16 +1,17 @@
 //===============================================
-#ifndef _GWindowDefault_
-#define _GWindowDefault_
+#ifndef _GFilesystem_
+#define _GFilesystem_
 //===============================================
-#include "GWindow.h"
+#include "GInclude.h"
 //===============================================
-class GWindowDefault : public GWindow {
+class GFilesystem {
 public:
-    GWindowDefault();
-    ~GWindowDefault();
-    
+    GFilesystem();
+    virtual ~GFilesystem();
+    static GFilesystem* Create(int key);
+
 public:
-    void show();
+    virtual WINDOW* getWindow(WINDOW* parent, int rows, int cols, int row, int col);
 };
 //===============================================
 #endif

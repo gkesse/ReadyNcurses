@@ -1,12 +1,11 @@
 //===============================================
 #include "GWindow.h"
-#include "GDebug.h"
+#include "GOptions.h"
 //===============================================
 int main(int argc, char** argv) {
-    if(0) {
-    GWindow* lWindow = GWindow::Create(G_WINDOW_DEFAULT);
-    lWindow->show();}
-    GDebug::Instance()->write("message de debogage");
+    GOptions::Instance()->getArgs(argc, argv);
+    GWindow* lWindow = GWindow::Create();
+    lWindow->show();
     return 0;
 }
 //===============================================
